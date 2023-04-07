@@ -1,0 +1,126 @@
+.form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  background-color: rgb(245, 184, 184);
+  border-radius: 10px;
+}
+
+.form h1{
+
+  text-align: center;
+  padding: 0 0 20px 0;
+  text-decoration: underline;
+  color: white;
+}
+
+.form form{
+
+  padding: 0 40px;
+
+}
+
+form .text_field{
+
+  position: relative;
+  border-bottom: 2px solid rgb(9, 9, 9);
+  margin: 30px 0px;
+
+}
+
+.text_field input{
+
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  color: white;
+  
+outline: none;
+}
+.text_field textarea{
+  width: 100%;
+  padding: 0 5px;
+  height: 100%;
+   font-size: 18px;
+  border: none;
+  background: none;
+  color: white;
+  resize: none;
+  outline: none;
+   
+
+}
+
+.text_field label{
+
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: blueviolet;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  transition: all .5s;
+}
+
+.text_field span::before{
+  content: '';
+  position:absolute;
+  width: 0%;
+  top: 40px;
+  left: 0;
+  height: 2px;
+  background-color: blue;
+  transition: all .5s;
+}
+
+.text_field .textarea_span::before{
+
+  top: 48px;
+}
+
+.text_field input:focus ~ label, .text_field input:valid ~label{
+  top: -5px;
+}
+.text_field input:focus ~ span::before , .text_field input:valid ~ span::before{
+  width: 100%;
+}
+
+.text_field textarea:focus ~ .textarea_label, .text_field textarea:valid ~ .textarea_label{
+  top: -16px;
+}
+.text_field textarea:focus ~ .textarea_span::before, .text_field textarea:valid ~ .textarea_span::before{
+width: 100%;
+}
+
+
+.button{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.button button[type=submit]{
+  padding: 8px;
+  width: 80px;
+  color: white;
+  background-color: aqua;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+  font-weight: bold;
+
+}
+
+.button button[type=submit]:hover{
+  background-color: aquamarine;
+  cursor: pointer;
+
+}
+
+

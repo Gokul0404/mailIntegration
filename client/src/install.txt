@@ -1,0 +1,19 @@
+
+
+nodemailer:
+
+//npm i axios
+//npm init antd
+//json   "proxy": "http://localhost:8005",
+//npm init antd
+
+
+
+server:
+
+//npm i nodemon express
+// npm i cors
+//npm i dotenv
+
+
+open mail and two step verification on and "app password " windows add password copy and paste the .env file.
